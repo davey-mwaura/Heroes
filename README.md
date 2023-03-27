@@ -4,15 +4,15 @@ The project demonstrates a simple Rails API for tracking heroes and their superp
 
 ## Objectives of the assignment
 
-- The project has three database tables: heroes, powers, and hero_powers. These tables have been created using Rails migrations, which define the structure of the tables and their relationships.
+1. The project has three database tables: heroes, powers, and hero_powers. These tables have been created using Rails migrations, which define the structure of the tables and their relationships.
 
-- Models have been created for Hero, Power, and HeroPower. 
+2. Models have been created for Hero, Power, and HeroPower. 
 The relationships between these models are established through associations:
 
-1. A Hero has many Powers through HeroPower
-2. A Power has many Heros through HeroPower
-3. A HeroPower belongs to a Hero and belongs to a Power
+- A Hero has many Powers through HeroPower
+- A Power has many Heros through HeroPower
+- A HeroPower belongs to a Hero and belongs to a Power
 
-- Validations have been added to ensure the data is consistent and meets the requirements:
-1. strength in the HeroPower model must be one of the following values: 'Strong', 'Weak', 'Average'
-2. description in the Power model must be present and at least 20 characters long
+3. Validations have been added to ensure the data is consistent and meets the requirements:
+- Strength in the HeroPower model must be one of the following values: 'Strong', 'Weak', 'Average'
+- Description in the Power model must be present and at least 20 characters long
